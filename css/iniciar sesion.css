@@ -1,0 +1,68 @@
+body{
+background-color: darkcyan;
+width: 100vh;
+}
+
+
+div{
+    background-color: white;
+    height: 500px;
+    width: 400px;
+    font-size: 50px ;
+    
+}
+input{
+    width: 300px;
+    height: 40px;
+}
+
+.transforma {
+    border: solid 1px #E27432;
+    transform: translateX(800px)/* Eje X, eje Y*/
+    translateY(300px)
+}
+
+.anima {
+    background-color:#ffffff;
+    width: 0px;
+    animation-name: efecto;/* nombre del keyframe*/
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    
+}
+
+/* Linea de tiempo */
+@keyframes efecto {
+    0%/* inicio*/ {
+        /* Propiedades CSS */
+        background-color: white;
+        opacity: 0;
+    }
+    30% { 
+        opacity: 1;
+        transform: translateX(-1000px);/* Eje X, eje Y*/
+    }
+    
+    50%{ 
+        transform: translateX(0px);/* Eje X, eje Y*/
+        background-color: rgb(255, 255, 255);
+        transform: translateX(800px);/* Eje X, eje Y*/
+    }
+    65%{ 
+        opacity: 1;
+        transform: translateX(0px);/* Eje X, eje Y*/
+    }
+    90%{ 
+        opacity: 1;
+        transform: translateX(0px);/* Eje X, eje Y*/
+    }
+    
+    100%/* final*/ {
+        /* Propiedades CSS */
+    }
+}
+
+
+    
